@@ -26,7 +26,7 @@
             {/each}
         </div>
         <div id="streamEmbed">
-            <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=localhost" title="twitch embed" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+            <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=mdkj.dev" title="twitch embed" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
         </div>
     {:else}
         <h2>No one is live yet...</h2>
