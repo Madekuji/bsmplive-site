@@ -86,6 +86,7 @@ body {
     overflow-x: scroll;
     scrollbar-width: none;
     min-height: fit-content;
+    flex-shrink: 0;
     /*background: rgba(0, 0, 0, 0.5);*/
 }
 #streamEmbed {
