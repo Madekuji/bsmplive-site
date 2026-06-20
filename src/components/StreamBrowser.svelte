@@ -33,7 +33,7 @@
         </div>
         <p>Now playing: {selectedStream}</p>
         <div id="streamEmbed">
-            <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=bsmplive-proto.mdkj.dev&parent=localhost" title="twitch embed" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+            <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=bsmplive-proto.mdkj.dev&parent=localhost" title="twitch embed" allow="fullscreen"></iframe>
         </div>
         {#if multiviewLink}
             <a href={multiviewLink} target="_blank">
