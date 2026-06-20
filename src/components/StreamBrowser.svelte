@@ -31,12 +31,12 @@
                 <button class="streamButton" onclick={() => selectedStream = stream.user_login}>{stream.user_login}</button>
             {/each}
         </div>
-        <p>Now playing: {selectedStream}</p>
+        <p style="margin-top: 0;">Now playing: {selectedStream}</p>
         <div id="streamEmbed">
             <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=bsmplive-proto.mdkj.dev&parent=localhost" title="twitch embed" allow="fullscreen"></iframe>
         </div>
         {#if multiviewLink}
-            <a href={multiviewLink} target="_blank">
+            <a href={multiviewLink} target="_blank" style="margin-top: 1rem;">
                 <button>
                     Multiview
                 </button>
@@ -50,7 +50,7 @@
     <p>{error.message}</p>
 {/await}
 
-<button onclick={() => promise = fetchStreams()} style="margin-top: 3rem;">
+<button onclick={() => promise = fetchStreams()} style="margin-top: 1rem;">
     Refresh streams
 </button>
 
