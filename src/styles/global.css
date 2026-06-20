@@ -38,6 +38,11 @@ body {
     /*padding: 2rem;*/
 }
 
+a {
+    color:white;
+    text-decoration: underline 2px;
+}
+
 #bodyDiv{
     height: calc(100% - 12.5rem - 12px);
     width: calc(100% - 2rem);
@@ -139,6 +144,11 @@ body {
 }
 #aboutBox h2 {
     margin-bottom: 0;
+}
+.buttonsList {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 button {
     font-family: Minecraft,sans-serif;
