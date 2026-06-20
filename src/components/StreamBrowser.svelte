@@ -28,10 +28,15 @@
         </script>
         <div id="tabsList">
             {#each streams as stream}
-                <button class="streamButton" onclick={() => selectedStream = stream.user_login}>{stream.user_login}</button>
+                <button
+                        class="streamButton"
+                        aria-label={stream.user_login}
+                        aria-current={selectedStream === stream.user_login}
+                        onclick={() => selectedStream = stream.user_login}>{stream.user_login}
+                </button>
             {/each}
         </div>
-        <p style="margin-top: 0;">Now playing: {selectedStream}</p>
+        <!--<p style="margin-top: 0;">Now playing: {selectedStream}</p>-->
         <div id="streamEmbed">
             <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=bsmplive-proto.mdkj.dev&parent=localhost" title="twitch embed" allow="fullscreen"></iframe>
         </div>
