@@ -44,7 +44,7 @@ a {
 }
 
 #bodyDiv{
-    height: calc(100% - 12.5rem - 12px);
+    height: calc(100vh - 12.5rem - 12px);
     width: calc(100% - 2rem);
     display: flex;
     flex-direction: column;
@@ -237,6 +237,23 @@ footer {
     --scrollbar-color-track: transparent;
     scrollbar-gutter: stable;
 }
+
+/* iOS Safari modifications */
+@supports (-webkit-touch-callout: none) {
+  @media screen and (max-width: 600px) {
+      html {
+          height: 100dvh;
+      }
+    body {
+        height: 100dvh;
+    }
+      #bodyDiv {
+          height: calc(100% - 14rem - 12px);
+      }
+  }
+}
+
+
 
 /* Modern browsers with `scrollbar-*` support */
 @supports (scrollbar-width: auto) {
