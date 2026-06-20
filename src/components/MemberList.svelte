@@ -10,7 +10,10 @@
 </script>
 
 {#await promise}
-    <p>Loading list...</p>
+    <p>Loading members...</p>
+    <div id="loadingBar">
+        <div id="loadingBarFill"></div>
+    </div>
 {:then streams}
     {#if streams[0]}
         <script>
