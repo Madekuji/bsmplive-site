@@ -1,9 +1,13 @@
 ---
-
+import childProcess from "child_process";
+const hash = childProcess
+    .execSync("git rev-parse --short HEAD")
+    .toString()
+    .trim();
 ---
 <div class="footer-border"></div>
 <footer>
-    <span>built by Madekuji-san</span>
-    <span>bsmplive-site prototype 2026-06-20</span>
-    <span>100% human-made</span>
+    <span>built by <a href="https://mdkj.dev" target="_blank" style="color: white;">Madekuji-san</a></span>
+    <span>bsmplive-site v.<a href=`https://github.com/Madekuji/bsmplive-site/commit/${hash}` target="_blank" style="color: white;">{hash}</a></span>
+    <span>human-made</span>
 </footer>
