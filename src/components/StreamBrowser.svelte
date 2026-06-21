@@ -41,7 +41,7 @@
         </div>
         <!--<p style="margin-top: 0;">Now playing: {selectedStream}</p>-->
         <div id="streamEmbed">
-            <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=bsmplive-proto.mdkj.dev&parent=localhost" title="twitch embed" allow="fullscreen"></iframe>
+            <iframe src="https://player.twitch.tv/?channel={selectedStream}&parent=bayanihansmp.mdkj.dev&parent=bsmplive-proto.mdkj.dev&parent=localhost" title="twitch embed" allow="fullscreen"></iframe>
         </div>
         {#if multiviewLink}
             <a href={multiviewLink} target="_blank" style="margin-top: 1rem;">
