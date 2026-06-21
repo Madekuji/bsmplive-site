@@ -10,6 +10,18 @@
         if(streamsResponse.data.length === 2) {
             multiviewLink = "https://holodex.net/multiview/AAMYtwitch" + streamsResponse.data[0].user_login + "%2CMAMYtwitch" + streamsResponse.data[1].user_login;
         }
+        else if(streamsResponse.data.length === 3) {
+            multiviewLink = "https://holodex.net/multiview/AAMYtwitch" + streamsResponse.data[0].user_login + "%2CMAMMtwitch" + streamsResponse.data[1].user_login + "%2CMMMMtwitch" + streamsResponse.data[2].user_login;
+        }
+        else if(streamsResponse.data.length === 4) {
+            multiviewLink = "https://holodex.net/multiview/AAMMtwitch" + streamsResponse.data[0].user_login + "%2CAMMMtwitch" + streamsResponse.data[1].user_login + "%2CMAMMtwitch" + streamsResponse.data[2].user_login + "%2CMMMMtwitch" + streamsResponse.data[3].user_login;
+        }
+        else if(streamsResponse.data.length === 5) {
+            multiviewLink = "https://holodex.net/multiview/AAMPtwitch" + streamsResponse.data[0].user_login + "%2CAPIJtwitch" + streamsResponse.data[1].user_login + "%2CIPIJtwitch" + streamsResponse.data[2].user_login + "%2CMAMPtwitch" + streamsResponse.data[3].user_login + "%2CQPIJtwitch" + streamsResponse.data[4].user_login;
+        }
+        else if(streamsResponse.data.length === 6) {
+            multiviewLink = "https://holodex.net/multiview/AAIMtwitch" + streamsResponse.data[0].user_login + "%2CAMIMtwitch" + streamsResponse.data[1].user_login + "%2CIAIMtwitch" + streamsResponse.data[2].user_login + "%2CIMIMtwitch" + streamsResponse.data[3].user_login + "%2CQAIMtwitch" + streamsResponse.data[4].user_login + "%2CQMIMtwitch" + streamsResponse.data[5].user_login;
+        }
         else {
             multiviewLink = "";
         }
