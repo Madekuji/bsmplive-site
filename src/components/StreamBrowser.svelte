@@ -58,7 +58,12 @@
     <p>{error.message}</p>
 {/await}
 
-<button onclick={() => promise = fetchStreams()} style="margin-top: 1rem;">
-    Refresh streams
-</button>
+<div class="buttonsList" style="margin-top: 1rem; justify-content: center;">
+    <button onclick={() => promise = fetchStreams()}>
+        Refresh streams
+    </button>
+    <a href="https://twitter.com/hashtag/PHTBayanihanSMPS1" target="_blank">
+        <button>#PHTBayanihanSMPS1</button>
+    </a>
+</div>
 
