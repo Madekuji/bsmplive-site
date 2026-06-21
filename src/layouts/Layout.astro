@@ -3,6 +3,10 @@ import '../styles/global.css';
 import HeaderNav from '../components/HeaderNav.astro';
 import Footer from '../components/Footer.astro';
 import { ClientRouter } from "astro:transitions";
+const title = "Bayanihan SMP Live";
+const link = "https://bayanihansmp.mdkj.dev";
+const description = "Watch livestreams of your favorite Filipino VTubers playing the Bayanihan Minecraft SMP!";
+const opengraphImg = "og.jpg";
 ---
 <!doctype html>
 <html lang="en">
@@ -12,7 +16,18 @@ import { ClientRouter } from "astro:transitions";
 		<!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />-->
 		<!--<meta name="generator" content={Astro.generator} />-->
-		<title>Bayanihan SMP Live</title>
+		<title>{title}</title>
+		<meta name="theme-color" content="#261b12">
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={link + "/" + opengraphImg} />
+		<meta property="og:url" content={link} />
+		<meta name="twitter:title" content={title} >
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={link + "/" + opengraphImg} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@PHTubersBayanihan" />
+		<meta name="twitter:creator" content="@Madekuji_san" />
         <ClientRouter />
 	</head>
 	<body transition:animate="none">
