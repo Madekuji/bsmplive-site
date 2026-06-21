@@ -18,7 +18,7 @@
 }
 
 html {
-    background: #000000 url("../assets/spawn_facade_edit.webp") no-repeat center center fixed;
+    background: #261b12 url("../assets/spawn_facade_edit.webp") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,7 +60,7 @@ a {
     width: 100%;
     top: 0;
     z-index: 10;
-    background: #000000 url("../assets/bg.png") no-repeat center center fixed;
+    background: #261b12 url("../assets/bg.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
